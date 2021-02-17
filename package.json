@@ -1,0 +1,24 @@
+{
+  "name": "ADOPT-ME",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"src/**/*.{js,html}\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsneddon-cmd/Adopt_Me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsneddon-cmd/Adopt_Me/issues"
+  },
+  "homepage": "https://github.com/lsneddon-cmd/Adopt_Me#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
