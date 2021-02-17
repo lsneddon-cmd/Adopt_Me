@@ -1,35 +1,27 @@
 "use strict";
 
-var Pet = function Pet(_ref) {
-  var name = _ref.name,
-    animal = _ref.animal,
-    breed = _ref.breed;
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, name),
-    React.createElement("h1", {}, animal),
-    React.createElement("h1", {}, breed),
-  ]);
-};
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = require("react-dom");
+
+var _Pet = _interopRequireDefault(require("./Pet"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var App = function App() {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, {
-      name: "Luna",
-      animal: "Dog",
-      breed: "Havanese",
-    }),
-    React.createElement(Pet, {
-      name: "Pepper",
-      animal: "Dog",
-      breed: "Cockatiel",
-    }),
-    React.createElement(Pet, {
-      name: "Doink",
-      animal: "Cat",
-      breed: "Mixed",
-    }),
-  ]);
+  return _react["default"].createElement("div", {}, [_react["default"].createElement("h1", {}, "Adopt Me!"), _react["default"].createElement(_Pet["default"], {
+    name: "Luna",
+    animal: "Dog",
+    breed: "Havanese"
+  }), _react["default"].createElement(_Pet["default"], {
+    name: "Pepper",
+    animal: "Dog",
+    breed: "Cockatiel"
+  }), _react["default"].createElement(_Pet["default"], {
+    name: "Doink",
+    animal: "Cat",
+    breed: "Mixed"
+  })]);
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+(0, _reactDom.render)(_react["default"].createElement(App), document.getElementById("root"));
