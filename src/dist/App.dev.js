@@ -6,9 +6,12 @@ var _reactDom = require("react-dom");
 
 var _Pet = _interopRequireDefault(require("./Pet.jsx"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-var App = function App() {// return React.createElement("div", {}, [
+var App = function App() {
+  // return React.createElement("div", {}, [
   //   React.createElement("h1", {}, "Adopt Me!"),
   //   React.createElement(Pet, {
   //     name: "Luna",
@@ -24,4 +27,7 @@ var App = function App() {// return React.createElement("div", {}, [
   // ]);
 };
 
-(0, _reactDom.render)(_react["default"].createElement(App), document.getElementById("root"));
+(0, _reactDom.render)(
+  _react["default"].createElement(App),
+  document.getElementById("root")
+);
