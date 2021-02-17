@@ -8,20 +8,20 @@ var _Pet = _interopRequireDefault(require("./Pet.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var App = function App() {
-  return _react["default"].createElement("div", {}, [_react["default"].createElement("h1", {}, "Adopt Me!"), _react["default"].createElement(_Pet["default"], {
-    name: "Luna",
-    animal: "Dog",
-    breed: "Havanese"
-  }), _react["default"].createElement(_Pet["default"], {
-    name: "Pepper",
-    animal: "Dog",
-    breed: "Cockatiel"
-  }), _react["default"].createElement(_Pet["default"], {
-    name: "Doink",
-    animal: "Cat",
-    breed: "Mixed"
-  })]);
+var App = function App() {// return React.createElement("div", {}, [
+  //   React.createElement("h1", {}, "Adopt Me!"),
+  //   React.createElement(Pet, {
+  //     name: "Luna",
+  //     animal: "Dog",
+  //     breed: "Havanese",
+  //   }),
+  //   React.createElement(Pet, {
+  //     name: "Pepper",
+  //     animal: "Dog",
+  //     breed: "Cockatiel",
+  //   }),
+  //   React.createElement(Pet, { name: "Doink", animal: "Cat", breed: "Mixed" }),
+  // ]);
 };
 
 (0, _reactDom.render)(_react["default"].createElement(App), document.getElementById("root"));
