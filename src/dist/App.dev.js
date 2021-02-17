@@ -4,7 +4,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = require("react-dom");
 
-var _Pet = _interopRequireDefault(require("./Pet"));
+var _Pet = _interopRequireDefault(require("./Pet.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
