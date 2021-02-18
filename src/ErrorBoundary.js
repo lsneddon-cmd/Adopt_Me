@@ -1,7 +1,7 @@
 // mostly code from reactjs.org/docs/errorboundaries.html
 
-import React, { Component } from 'react'
-import { Link } from '@reach/router'
+import React, { Component } from "react";
+import { Link } from "@reach/router";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class ErrorBoundary extends Component {
     this.state = { hasError: false, redirect: false };
   }
 
-  static getDerivedStateFromError () {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
@@ -26,15 +26,16 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.redirect) {
-      return <Redirect to='/' />;
+      return <Redirect to="/" />;
     }
     if (this.state.hasError) {
       return (
         <h1>
-          There was an error with this listing link. <Link to='/'>Click here </Link>
+          There was an error with this listing link.{" "}
+          <Link to="/">Click here </Link>
           to go back to the home page or wait 5 seconds
         </h1>
-      )
+      );
     }
 
     return this.props.children;
