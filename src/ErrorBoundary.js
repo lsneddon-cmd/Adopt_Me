@@ -1,14 +1,17 @@
 // mostly code from reactjs.org/docs/errorboundaries.html
 
 import React, { Component } from 'react'
-import { Link } from '@react/router'
+import { Link } from '@reach/router'
 
 class ErrorBoundary extends Component {
-  state = { hasError: false }
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
   static getDerivedStateFromError () {
     return { hasError: true };
   }
-  componentDidCatch(eror, info) {
+  componentDidCatch(error, info) {
     // Would normally send to consolidated logging service
     console.error(`Error boundary caught error: ${error}, info: ${info}`);
   }
@@ -16,7 +19,7 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <h1>
-          There was an error with this listing link. <Link to='/'>Click here</Link>
+          There was an error with this listing link. <Link to='/'>Click here </Link>
           to go back to the home page or wait 5 seconds
         </h1>
       )
